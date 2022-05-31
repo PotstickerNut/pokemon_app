@@ -16,6 +16,10 @@ app.get("/pokemon", (req, res) => {
   res.render("Index", { data: pokemon });
 });
 
+app.get("/pokemon/show", (req, res) => {
+  res.render("Show", { data: pokemon });
+});
+
 app.get("/pokemon/:indexOfPokemon", (req, res) => {
   res.send(pokemon[req.params.indexOfPokemon]);
 });
