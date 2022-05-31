@@ -5,6 +5,9 @@ const app = express();
 
 const PORT = 3000;
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
@@ -18,6 +21,15 @@ app.get("/pokemon", (req, res) => {
 
 app.get("/pokemon/show", (req, res) => {
   res.render("Show", { data: pokemon });
+});
+
+app.get("/pokemon/new", (req, res) => {
+  res.render("newPokemon");
+});
+
+app.post("/pokemon", (req, res) => {
+  pokemon.push(req.body);
+  res.redirect("/pokemon");
 });
 
 app.get("/pokemon/:id", (req, res) => {
