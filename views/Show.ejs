@@ -10,12 +10,9 @@
   <body>
     <h1>Gotta Catch 'Em All!</h1>
     <a href="/pokemon">back</a>
-    <% data.map((pokemon, index) => { %>
     <h2>
       <%= pokemon.name[0].toUpperCase() + pokemon.name.slice(1).toLowerCase() %>
     </h2>
-    <a href="/pokemon/<%= index %>"> </a>
-    <img src=<%=` ${pokemon.img}.jpg` %> width ="400" height="300" >
-    <% }) %>
+    <img src=<%=` ${pokemon.img}.jpg` %> width ="400" height="300" alt=<%=`${pokemon.name}`%> />
   </body>
 </html>
