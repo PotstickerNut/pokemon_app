@@ -16,8 +16,12 @@ app.get("/pokemon", (req, res) => {
   res.render("Index", { data: pokemon });
 });
 
+app.get("/pokemon/:indexOfPokemon", (req, res) => {
+  res.send(pokemon[req.params.indexOfPokemon]);
+});
+
 app.get("/pokemon/:id", (req, res) => {
-  //   const result = pokemon.filter((pokemon) => pokemon.id === req.params.id);
+  // const result = pokemon.filter((pokemon) => pokemon.id === req.params.id);
 
   res.send(req.params.id);
 });
