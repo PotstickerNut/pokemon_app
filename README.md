@@ -2,7 +2,7 @@
 
 ## Poke Express
 
-![pokemon image] (https://i.imgur.com/rRKtN1B.jpg)
+![pokemon image](https://i.imgur.com/rRKtN1B.jpg)
 
 Purpose from Curriculum Development Team: Make a Pokemon app that displays data inside server-side rendered views, learners will gain a deeper understanding of what they built in class and should have some fun with doing it. Encourage students to review class material and use it as a guide also encourage them to use the express documentation. Discourage them from using online tutorials to help them with this because they will have difficulty finding an online tutorial that is at the same level as this assignment, it will be either be too advanced or too simple and will in most cases confuse learners away from this assignments purpose.
 
