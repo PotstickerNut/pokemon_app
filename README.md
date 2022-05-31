@@ -171,13 +171,15 @@ Approximate package.json
 - - Your h1 tag says "Gotta Catch 'Em All"
 - - Add an h2 tag that will display the name of the pokemon
 - - Add an image tag that will display an image of the pokemon
-    Add an anchor tag with the text of back, that will take you back to your Index.ejs view
-    Update the route in the server.js to render the show view with the pokemon data
-    Oh no! The image is broken because in our database the image links don't have the .jpg ending, let's fix that programmatically! Without going back to the database and editing it there, add on .jpg to the end of the pokemon's image data
+- - Add an anchor tag with the text of back, that will take you back to your Index.ejs view
+- Update the route in the server.js to render the show view with the pokemon data
+- Oh no! The image is broken because in our database the image links don't have the .jpg ending, let's fix that programmatically! Without going back to the database and editing it there, add on .jpg to the end of the pokemon's image data
 
-🔴 Commit:
-"Created show views of each pokemon"
+## 🔴 Commit:
 
-Hungry for More?
-Learn about express static in order to learn how to link a css file to your app (we'll be covering it tomorrow, but if you're interested in looking into it now: read those docs! (Links to an external site.) Go ahead and dive right in! Style your application with Bootstrap or any other CSS framework! Or really jazz up your app by adding some hand-rolled flourishes with css animations, jQuery and more!
-Sign up for Code Wars (Links to an external site.) and try out a challenge (or a few!) in order to keep honing your JavaScript skills!
+## "Created show views of each pokemon"
+
+### Hungry for More?
+
+1. Learn about express static in order to learn how to link a css file to your app (we'll be covering it tomorrow, but if you're interested in looking into it now: read those docs! (Links to an external site.) Go ahead and dive right in! Style your application with Bootstrap or any other CSS framework! Or really jazz up your app by adding some hand-rolled flourishes with css animations, jQuery and more!
+2. Sign up for Code Wars (Links to an external site.) and try out a challenge (or a few!) in order to keep honing your JavaScript skills!
