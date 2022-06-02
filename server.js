@@ -23,10 +23,6 @@ app.get("/pokemon", (req, res) => {
   });
 });
 
-app.get("/pokemon/show", (req, res) => {
-  res.render("Show", { data: pokemon });
-});
-
 app.get("/pokemon/new", (req, res) => {
   res.render("newPokemon");
 });
@@ -37,7 +33,11 @@ app.post("/pokemon", (req, res) => {
 });
 
 app.get("/pokemon/:id", (req, res) => {
-  res.render("Show", { pokemon: pokemon[req.params.id] });
+  res.render("Show", {
+    pokemon: pokemon[req.params.id],
+    pageTitle: "Pokemon",
+    pageHeader: "Gotta Catch 'Em All!",
+  });
 });
 
 app.listen(PORT, () => {
