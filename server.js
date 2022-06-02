@@ -16,7 +16,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/pokemon", (req, res) => {
-  res.render("Index", { data: pokemon });
+  res.render("Index", {
+    data: pokemon,
+    pageTitle: "Pokemon",
+    pageHeader: "See all the Pokemon!",
+  });
 });
 
 app.get("/pokemon/show", (req, res) => {
