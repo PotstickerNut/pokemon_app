@@ -11,9 +11,9 @@
     <h1><%= pageHeader %></h1>
     <a href="/pokemon/new">Create New Pokemon</a>
     <ul>
-      <% data.map((pokemon, index) => { %>
+      <% data.map((pokemon) => { %>
       <li>
-        <a href="/pokemon/<%= index %>">
+        <a href="/pokemon/<%= pokemon._id %>">
           <%= pokemon.name[0].toUpperCase() +
           pokemon.name.slice(1).toLowerCase() %>
         </a>
